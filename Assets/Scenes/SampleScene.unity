@@ -270,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 508016836}
-  - component: {fileID: 508016835}
+  - component: {fileID: 508016837}
   m_Layer: 0
   m_Name: save
   m_TagString: Untagged
@@ -278,20 +278,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &508016835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508016834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a78b7131c017554a8ef41b6379e9e31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sketch: {fileID: 1723660465703138339, guid: 67bb62c01f53ebf4b9846f9d40d1de7c, type: 3}
-  RTexture: {fileID: 8400000, guid: 7c5f5f5057323bb41a248893459e12e8, type: 2}
 --- !u!4 &508016836
 Transform:
   m_ObjectHideFlags: 0
@@ -307,6 +293,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &508016837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508016834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11ab29cd8c92194fa51bf2d919848e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon1: {fileID: 1350136672}
+  icon2: {fileID: 97757391}
+  icon3: {fileID: 1840345867}
 --- !u!1 &539420048
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +482,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -566,6 +568,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ba5ce1cd6708174d9634720d64bb8dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11ab29cd8c92194fa51bf2d919848e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon1: {fileID: 0}
+  icon2: {fileID: 0}
+  icon3: {fileID: 0}
 --- !u!1 &1350136672
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,9 +814,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 508016835}
-        m_TargetAssemblyTypeName: drawer, Assembly-CSharp
-        m_MethodName: Save
+      - m_Target: {fileID: 508016837}
+        m_TargetAssemblyTypeName: saver, Assembly-CSharp
+        m_MethodName: generateImage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
